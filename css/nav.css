@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : 'roboto', sans-serif;
+}
+    .navbar{
+        position:absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        display: block;
+        background: #d34b4b;
+        z-index:5;
+
+    }
+
+    .nav{
+        width:100%;
+        padding: 10px 10vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .brand-logo
+    { 
+        height: 60px;
+
+
+
+    }
+.nav-items {
+   position: relative;
+    display: flex;
+   align-items : center;
+
+
+}
+.nav-items p{
+   
+    position:relative;
+    color: rgb(5, 5, 5);
+    text-transform: capitalize;
+    font-weight: bold;
+    font: size 15px;
+
+    
+}
+.search{
+    position:relative;
+    width: 20vw;
+    display: flex
+
+}
+.search-box {
+width: 80%;
+height: 40px;
+padding: 10px;
+/*border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+*/
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border:1px #fdfdff;
+text-transform: capitalize;
+background:none;
+color: rgb(0, 0, 0);
+outline: none;
+background-color: #fdfdff; 
+
+
+
+}
+.count{
+    position: absolute;
+    height:30px;
+    width:30px;
+    font-size: 15px;
+    display:inline-flex;
+    justify-content:center;
+    color:#fafcf7;
+    transform:translate(50%, -50%);
+    z-index:1;
+    display: inline-flex;
+    align-items:center;
+    top:5px;
+    left: 17px;
+    background-color:#04AA6D;
+    border-radius: 500px;
+
+
+    
+    
+
+    
+
+
+}
+
+.search-btn{
+    width: 90px;
+    height: 40px;
+    padding: 10px 20x;
+   
+    border:none;
+    
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fdfdff;
+    color: rgb(12, 12, 12);
+    text-transform: capitalize;
+    font-weight: bold;
+    font: size 15px;
+  
+
+} 
+.search-btn:hover{
+  
+    color:rgb(80, 5, 201);
+}
+.nav-items a{
+    margin: 20px;
+    position: relative;
+}
+.nav-items a img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.link-container{
+    width: 100%;
+    display: flex;
+
+padding: 10px 10px;
+justify-content: center;
+list-style-type:  none;
+ border-top: 1px solid #d1d1d1;
+background-color: rgb(255, 255, 255);
+
+
+}
+.link{
+    width: 80%;
+height: 40px;
+padding: 0 10px;
+margin: 0 5px;
+
+
+border-radius: 10px; 
+text-transform: capitalize;
+text-decoration:wavy;
+background: none;
+
+color: rgb(0, 0, 0);
+outline: none;
+
+
+
+
+}
+.links{
+    width: 80%;
+height: 40px;
+padding: 0 10px;
+margin: 0 5px;
+
+
+border-radius: 10px; 
+text-transform: capitalize;
+text-decoration:wavy;
+background: none;
+
+color: rgb(0, 0, 0);
+outline: none;
+
+
+
+
+}
+.link:hover{
+
+    color:#2f65fd;
+
+    
+
+}
+.links:hover{
+
+    color:#2f65fd;
+
+    
+
+}
+
+
+.login-logout-popup{
+    position: absolute;
+    left:70%;
+     transform: translateX(-50%);
+     padding: 10px;
+     background: white;
+     border-radius: 10px;
+     top: 4.2vw;
+     width: 200px;
+     transition: 00.5s;
+     border: 2px solid #f5f5f5;
+
+}
+.login-logout-popup::after{
+    content: "";
+    position: absolute;
+    top: -7.5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 15px;
+    height: 15px;
+    background: rgb(247, 244, 244);
+    border-radius: 5px;
+
+
+}
+
+#user-btn {
+    padding: 10px;
+    background: rgb(194, 190, 190);
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.hide{
+    opacity: 0;
+    pointer-events: none;
+
+}
+.link-container.icon {
+    display: none;
+  }
+
+@media  screen and (max-width:600px) {
+   .link-container a:not(:first-child){display:none;}
+.link-container a.icon{
+    float: right;
+    display:block;
+}
+}
+@media screen and (max-width: 600px) {
+    .link-container.responsive {position: relative;}
+    .link-container.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+    
+      
+      .link-container a.links {
+        background-color: #04AA6D;
+        color: white;
+      }
+     .link-container.responsive a {
+      float: none;
+      display : block;
+      text-align: left;
+
+     }   }
